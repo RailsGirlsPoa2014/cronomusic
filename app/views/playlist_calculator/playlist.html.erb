@@ -1,0 +1,11 @@
+<h1>Sua playlist de <%= @time %> minutos ficou 
+	com <%= format_seconds(@total_playlist) %></h1>
+
+<ul>
+<% @songs.each do |song| %>
+  <li><%= song.name %> <%= format_seconds(song.duration) %> <%= song.artist %>
+  </li>
+<% end %>
+</ul>
+
+<%= link_to('Voltar', "/playlist_calculator/time") %>

@@ -1,0 +1,15 @@
+<h1>Bem vindo ao Cronomusic!</h1>
+<h3>Faca playlists no tempo certo</h3>
+<p>Nao esqueca de digitar em minutos</p>
+
+<!--
+<%= form_tag("/playlist_calculator/playlist") do %>
+  <%= text_field_tag('time') %>
+  <%= button_tag('Criar playlist') %>
+<% end %>
+-->
+
+<form action="/playlist_calculator/playlist">
+	<input type="number" name="time"/>
+	<button>Criar playlist</button>
+</form>
